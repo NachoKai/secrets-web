@@ -31,7 +31,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://<USERNAME_DB>:<PASSWORD_DB>@cluster0-hfhsz.mongodb.net/userDB', {
+mongoose.connect('mongodb+srv://USERNAME_DB:PASSWORD_DB@cluster0-hfhsz.mongodb.net/secretsDB', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true
 });
