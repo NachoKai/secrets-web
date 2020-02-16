@@ -31,10 +31,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect('mongodb+srv://USERNAME_DB:PASSWORD_DB@cluster0-hfhsz.mongodb.net/secretsDB', {
-	useNewUrlParser: true,
-	useUnifiedTopology: true
-});
+mongoose.connect(
+	`mongodb+srv://${process.env.USERNAME_DB}:${process.env.PASSWORD_DB}@cluster0-hfhsz.mongodb.net/secretsDB`,
+	{
+		useNewUrlParser: true,
+		useUnifiedTopology: true
+	}
+);
 mongoose.set('useCreateIndex', true);
 
 const userSchema = new mongoose.Schema({
