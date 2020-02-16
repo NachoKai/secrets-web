@@ -1,4 +1,4 @@
-# Authentication Secrets Web con OAuth
+# Authentication Secrets Web with OAuth
 #### Deployed on Heroku and Database on MongoDB Atlas.
 ### [Live Demo](https://secrets-kai.herokuapp.com/)  
 •Node.js  
